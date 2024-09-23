@@ -1,0 +1,79 @@
+.face{
+    background-color: #ffa511;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    
+}
+
+.left-eye{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.right-eye{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+
+.mouth{
+    height:80px;
+    width: 200px;
+    background-color: brown;
+    position: relative;
+    top: 250px;
+    left: 95px;
+    border-radius: 50% 50% 50% 50%;
+    transition: all 2s ease-in-out ;
+
+}
+
+
+.face:hover .mouth{
+    height:90px;
+    transform:scale(1.2);
+    border-radius: 0 0 100px 100px;
+
+}
+
+.left-pupil, .right-pupil, .left-cheek, .right-cheek{
+    height: 0px;
+    width: 0px;
+    transition: all 3s ease-in;
+}
+
+.face:hover .left-pupil, .face:hover .right-pupil{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+  
+}
+
+.face:hover .left-cheek, .face:hover .right-cheek{
+    height: 20px;
+    width: 50px;
+    border-radius: 35%;
+    background: linear-gradient(45deg,pink,rgb(248, 17, 190));
+    display: inline-block;
+    position: relative;
+    top: 200px;
+}
+
+.left-cheek{
+    left: 60px;
+}
+.right-cheek{
+    left: 220px;
+}
