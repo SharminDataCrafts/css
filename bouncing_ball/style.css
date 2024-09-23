@@ -1,0 +1,64 @@
+.stage{
+    background-color:lightcyan;
+    min-width: 800px;
+    height: 200px;
+    margin-top: 150px;
+}
+
+.ball{
+    height: 70px;
+    width: 70px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+@keyframes slidein {
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+    25%{
+        left:25%;
+        top: 100px;
+    }
+    50%{
+        left:50%;
+        top: 0%;
+    }
+    100%{
+        left: 90%;
+        top: 100px;
+    }
+}
+
+ .ball{
+    transition: animation ;
+    position: relative;
+    /* bottom: 10%; */
+    animation: slidein 3s ease-out 1s infinite alternate ;
+}
+
+@keyframes slide {
+    0%{
+        left: 0%;
+    }
+    25%{
+        left:25%;
+    }
+    50%{
+        left:50%;
+
+    }
+    100%{
+        left: 85%;
+    }
+}
+
+.slider{
+    height: 10px;
+    width: 200px;
+    background-color: brown;
+    position: relative;
+    top: 100px;
+    animation: slide 3s linear 1s infinite alternate  ;
+}
